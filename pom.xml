@@ -37,14 +37,14 @@
 		<repository>
 			<id>my-nexus</id>
 			<name>Nexus</name>
-			<url>http://35.183.1.31/nexus/content/repositories/releases</url>
+			<url>http://nexus.revature.tech/nexus/content/repositories/releases</url>
 		</repository>
 
 		<!-- Publish the versioned releases here -->
 		<snapshotRepository>
 			<id>my-nexus</id>
 			<name>Nexus</name>
-			<url>http://35.183.1.31/nexus/content/repositories/snapshots</url>
+			<url>http://nexus.revature.tech/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -53,7 +53,7 @@
 		<repository>
 			<id>my-nexus</id>
 			<name>Nexus</name>
-			<url>http://35.183.1.31/nexus/content/groups/public</url>
+			<url>http://nexus.revature.tech/nexus/content/groups/public</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -69,7 +69,7 @@
 		<pluginRepository>
 			<id>my-nexus</id>
 			<name>Nexus</name>
-			<url>http://35.183.1.31/nexus/content/groups/public</url>
+			<url>http://nexus.revature.tech/nexus/content/groups/public</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -79,4 +79,11 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.hateoas</groupId>
+			<artifactId>spring-hateoas</artifactId>
+			<version>0.19.0.RELEASE</version>
+		</dependency>
+	</dependencies>
 </project>
