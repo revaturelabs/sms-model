@@ -1,8 +1,15 @@
 package com.revature.sms.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import org.springframework.hateoas.ResourceSupport;
 
+@Entity
+@Table
 public class Trainee extends ResourceSupport {
+	@Id
 	private Long traineeId;
 	private String email;
 	private Long batch;
